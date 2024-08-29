@@ -1,0 +1,88 @@
+@use "sass:list";
+@use 'private' as p;
+
+@mixin col-width($from: 1, $to: 65) {
+  grid-column-start: $from;
+  grid-column-end: $to;
+}
+
+@mixin grid-template() {
+  display: grid;
+  grid-template-columns: repeat(64, calc(100% / 64));
+}
+
+
+@mixin margin($args...) {
+  @include p.margin_padding('margin', $args...)
+}
+
+@mixin padding($args...) {
+  @include p.margin_padding('padding', $args...)
+}
+
+
+@mixin width($size) {
+  width: calc(#{$size} * var(--coef-size));
+}
+
+@mixin height($size) {
+  height: calc(#{$size} * var(--coef-size));
+}
+
+@mixin height_width($height, $width) {
+  @if ($height and $width) {
+    height: calc(#{$height} * var(--coef-size));
+    width: calc(#{$width} * var(--coef-size));
+  } @else {
+    @error 'invalid argument for -> height_width( #{$height, $width} ) '
+  }
+}
+
+@mixin max-width($size) {
+  max-width: calc(#{$size} * var(--coef-size));
+}
+
+@mixin text-field-autocomplete-reset {
+
+  /// input field auto-complete reset
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+
+    -webkit-box-shadow: none !important;
+
+    //-webkit-text-fill-color: #a4b5c0 !important;
+
+  }
+
+
+  @-webkit-keyframes autofill {
+    0%, 100% {
+      color: #666;
+      background: transparent;
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+
+  /// input field auto-complete reset --- end
+
+
+}
+
+

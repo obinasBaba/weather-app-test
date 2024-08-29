@@ -1,0 +1,196 @@
+// font weight
+$fw-extra-light: 200;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 900;
+
+/* background variables -----------------------------------------------    */
+$bg-body: #fff;
+$bg-section: #F7F7FB;
+
+$bg-btn-100: #2b2f3b;
+
+$bg-card-100: #22222C;
+$bg-card-200: #1F1F29;
+$bg-card-300: #191922;
+
+/*   Text variables  ----------------------------------------------- */
+$txt-normal: #1C1C24;
+$txt-100: #63666F;
+
+
+/*   Icon variables    -----------------------------------------------   */
+$icon-light: #5C637C;
+$icon-dark: #3C4358;
+
+
+/*   Border variables    -----------------------------------------------   */
+$border-100: #4e5365;
+$border-200: #3C4251;
+$border-300: #333848;
+$border-400: #2A2B37;
+
+
+@mixin colors-declarations {
+  /*  fonts variables ------------------------------------------------    */
+  --sofia-pro-soft: 'SofiaProSoft', sans-serif;
+  --sofia-pro: 'Sofia Pro';
+  --gramatika: 'Gramatika', sans-serif;
+  --inter: 'Inter', sans-serif;
+
+  // fot weight
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 900;
+
+  --font-size-rate: 1;
+
+
+  /* background variables -----------------------------------------------    */
+  --bg-body: white;
+  --bg-section: #F7F7FB;
+
+  --bg-card-100: #22222C;
+  --bg-card-200: #1F1F29;
+  --bg-card-300: #1a1a23;
+  --bg-card-400: #191922;
+
+
+  /*   Text variables  ----------------------------------------------- */
+  --txt-normal: #1C1C24;
+  --txt-100: #63666F;
+
+
+  /*   Icon variables    -----------------------------------------------   */
+  --icon-light: #5C637C;
+  --icon-dark: #3C4358;
+
+
+  /*   Border variables    -----------------------------------------------   */
+  --border-100: #4e5365;
+  --border-200: #3C4251;
+  --border-300: #333848;
+  --border-400: #2A2B37;
+
+  /*  Colors vars ------------------------------------------------------*/
+
+  // Green
+  --grn-800: #03543F;
+  --grn-500: #0E9F6E;
+  --grn-400: #31C48D;
+  --grn-600: #057A55;
+  --grn-200: #BCF0DA;
+  --grn-100: #DEF7EC;
+  --white: #fff;
+
+  // Accent colors
+  --accent-lightest: #F5F7FF;
+  --accent-light: #5a87ea;
+  --accent-main: #1A56DB;
+  --accent-dark: #003A8C;
+  --accent-darkest: #022a61;
+
+  --primary-50: #EBF5FF;
+  --primary-100: #E1EFFE;
+  --primary-800: #1E429F;
+
+  // Grey colors
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #eeeeee;
+  --gray-300: #e0e0e0;
+  --gray-400: #9CA3AF;
+  --gray-500: #6B7280;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #111928;
+
+
+  // Yellow colors
+  --yellow-400: #fafafa;
+  --yellow-800: #723B13;
+  --yellow-100: #FDF6B2;
+
+  // PINK colors
+    --pink-400: #fafafa;
+    --pink-800: #99154B;
+    --pink-100: #FCE8F3;
+
+  // RED
+    --red-800: #9B1C1C;
+    --red-100: #FDE8E8;
+
+  // PURPLE
+    --purple-800: #5521B5;
+    --purpe-100: #EDEBFE;
+
+  // INDIGO
+    --indigo-800: #42389D;
+    --indigo-100: #E5EDFF;
+
+    // ORANGE
+    --orange-800: #ef6c00;
+    --orange-100: #ffe0b2;
+
+
+
+  // success colors
+  //lightest: '#F0FDF9',
+  //light: '#3FC79A',
+  //main: '#10B981',
+  //dark: '#0B815A',
+  //darkest: '#134E48',
+  //contrastText: '#FFFFFF',
+  --sucess-lightest: #F0FDF9;
+  --sucess-light: #3FC79A;
+  --sucess-main: #10B981;
+  --sucess-dark: #0B815A;
+  --sucess-darkest: #134E48;
+  --sucess-contrastText: #FFFFFF;
+
+
+  // when it have data-theme="dark"
+  &[data-theme="dark"] {
+
+    --white: #121212;
+
+    /*   Background variables      */
+    --bg-body: #131313;
+    --bg-section: #1C1C24;
+
+    --bg-card-100: #22222C;
+    --bg-card-200: #1F1F29;
+    --bg-card-300: #1a1a23;
+    --bg-card-400: #191922;
+
+    --bg-btn-100: #2b2f3b;
+
+
+    /*   Text variables      */
+    --txt-100: #ADB6D7;
+    --txt-normal: #838BA8;
+    --txt-300: #808391;
+    --txt-400: #63666F;
+
+    --gray-50: #121212; /* Darkest background */
+    --gray-100: #181818; /* Slightly lighter background */
+    --gray-200: #212121; /* Background for elements */
+    --gray-300: #303030; /* Borders and separators */
+    --gray-400: #424242; /* Disabled text and icons */
+    --gray-500: #6B7280; /* Placeholder text and inactive elements (lighten for contrast) */
+    --gray-600: #757575; /* Faint highlights or outlines (lighten for contrast) */
+    --gray-700: #9E9E9E; /* Lighter text and icons */
+    --gray-800: #BDBDBD; /* Primary text and icons */
+    --gray-900: #FFFFFF; /* White for extreme contrast (use sparingly) */
+  }
+
+
+}

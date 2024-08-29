@@ -26,7 +26,7 @@ Access travel advisor os at [travelOs.com](https://google.com)
 
 1. Clone the repo
    ```sh
-   git clone https://travelleadersgroup@dev.azure.com/travelleadersgroup/TravelAdvisorOS-Web/_git/TravelAdvisorOS-Web
+   git clone https://github.com/obinasBaba/weather-app-test.git
    ```
  2. Install Packages
    ```sh
@@ -37,7 +37,7 @@ Access travel advisor os at [travelOs.com](https://google.com)
 - Next.js
 - React
 - TypeScript
-- SCSS
+- Tailwind CSS
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 

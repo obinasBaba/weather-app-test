@@ -1,0 +1,108 @@
+@use "normalize";
+@use "../variables/fonts" as f;
+@use "../mixins/all" as m;
+@use "../variables/breakpoints" as *;
+@use "../variables/colors" as clr;
+
+
+:root {
+  box-sizing: border-box;
+
+  @include clr.colors-declarations;
+
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  //min-height: 100%;
+  width: 100%;
+
+  //font-size: 18px;
+  font-size: calc(18px * var(--font-size-rate));
+  font-family: var(--sofia-pro), serif;
+
+  @media screen and (max-width: 1920px) {
+    //font-size: 16px;
+    font-size: calc(16px * var(--font-size-rate));
+
+  }
+
+  @media screen and (max-width: 1720px) {
+    //font-size: 14px;
+    font-size: calc(14px * var(--font-size-rate));
+  }
+
+  @media screen and (max-width: 1400px) {
+    //font-size: 14px;
+    //font-size: 11.25px;
+    font-size: calc(11.25px * var(--font-size-rate));
+  }
+
+  @media screen and (max-width: 1200px) {
+    //font-size: 9px;
+    font-size: calc(9px * var(--font-size-rate));
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  //boxSizing: 'border-box',
+}
+
+html,
+body {
+  //height: 100%;
+
+  &.inter {
+    font-family: var(--inter) sans-serif;
+  }
+}
+
+html {
+}
+
+
+body {
+  position: relative;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  overflow-x: hidden;
+
+  @include m.text-field-autocomplete-reset;
+
+  .filepond--root {
+    font-family: var(--sofia-pro-soft), serif;
+  }
+
+}
+
+
+* {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
