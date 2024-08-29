@@ -12,9 +12,6 @@ import NextThemeProvider from '@/theme/next-theme-provider';
 import createMuiTheme from './mui-theme-config';
 import { useTheme } from 'next-themes';
 
-
-// This implementation is from emotion-js
-// https://github.com/emotion-js/emotion/issues/2928#issuecomment-1319747902
 function MuiThemeProvider({ children }: React.PropsWithChildren) {
   const { theme: nxtTheme, setTheme: setNxtTheme } = useTheme();
   const muiTheme = useMuiTheme();
@@ -47,6 +44,7 @@ function MuiThemeProvider({ children }: React.PropsWithChildren) {
     }
     let styles = '';
     for (const name of names) {
+      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
       styles += cache.inserted[name];
     }
     return (

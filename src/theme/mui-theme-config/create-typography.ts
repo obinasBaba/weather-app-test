@@ -1,7 +1,8 @@
 import { type TypographyOptions } from '@mui/material/styles/createTypography';
 
-export const createTypography = () => {
+export const createTypography = (fontInter = false) => {
   const HeadingFont = 'var(--sofia-pro)';
+  // const fontFamily = 'Dosis';
   const fontFamily = 'var(--sofia-pro)';
 
   const typo: TypographyOptions = {

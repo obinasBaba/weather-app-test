@@ -2,9 +2,9 @@ import { Divider, Skeleton, Typography } from '@mui/material';
 import moment from 'moment';
 import React from 'react';
 
-import { WeatherListItem } from '@/hooks/use-weather-data';
 import { findIcon } from '@/utils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import type { WeatherListItem } from '@/hooks/use-weather-data';
 
 interface Props {
   weather?: WeatherListItem;

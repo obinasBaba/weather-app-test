@@ -6,8 +6,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 
 import { WeatherCards } from '@/components/weather-cards';
 import useLocationWeatherData from '@/hooks/use-location-weather-data';
-import { useGeoLocation } from '@/hooks/useGeoLocation';
 import useWeatherData from '@/hooks/use-weather-data';
+import { useGeoLocation } from '@/hooks/useGeoLocation';
 import { Cancel, LocationOn } from '@mui/icons-material';
 import { type UseQueryResult } from '@tanstack/react-query';
 import type { WeatherData } from '@/hooks/use-weather-data';
