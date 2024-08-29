@@ -1,18 +1,8 @@
 import { type TypographyOptions } from '@mui/material/styles/createTypography';
 
-import { useAppStore } from '@/config/app-store';
-
-export const createTypography = (fontInter = false) => {
-  let HeadingFont = 'var(--sofia-pro)';
-  // const fontFamily = 'Dosis';
-  let fontFamily = 'var(--sofia-pro)';
-
-  // console.log('font changed : ', fontInter);
-
-  if (fontInter) {
-    HeadingFont = 'var(--inter)';
-    fontFamily = 'var(--inter)';
-  }
+export const createTypography = () => {
+  const HeadingFont = 'var(--sofia-pro)';
+  const fontFamily = 'var(--sofia-pro)';
 
   const typo: TypographyOptions = {
     fontFamily,

@@ -42,7 +42,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /.husky/
-/.env.local
+#/.env.local
 /.env.development.local
 /.env.production.local
 /prisma/.env.development
