@@ -1,4 +1,4 @@
-import { WeatherData } from '@/hooks/use-weather-data';
+import { type WeatherData } from '@/hooks/use-weather-data';
 import { useQuery } from '@tanstack/react-query';
 import type { QueryFunction } from '@tanstack/react-query';
 

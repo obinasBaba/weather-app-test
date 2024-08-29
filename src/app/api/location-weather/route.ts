@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import qs from 'qs';
 
-import { URLSearchParams } from '@whatwg-node/node-fetch';
 import type { NextRequest } from 'next/server';
 
 const key = process.env.WEATHER_FORECAST_OPEN_WEATHER_API_KEY;

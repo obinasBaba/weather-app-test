@@ -6,9 +6,9 @@ import { createPalette } from './create-palette';
 import { createShadows } from './create-shadows';
 import { createTypography } from './create-typography';
 
-export function createTheme(currentTheme: Theme, mode: 'light' | 'dark' = 'light', fontInter = false) {
+export function createTheme(currentTheme: Theme, mode: 'light' | 'dark' = 'light') {
   const shadows = createShadows();
-  const typography = createTypography(fontInter);
+  const typography = createTypography();
   const palette = createPalette(currentTheme);
   const components = createComponents(currentTheme);
 
