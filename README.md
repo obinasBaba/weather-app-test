@@ -1,5 +1,7 @@
 # Introduction - Travel Advisor OS
-Travel Advisor OS is a web application built with Next.js, React, and TypeScript. It provides users with travel advice and information.
+
+Travel Advisor OS is a web application built with Next.js, React, and TypeScript. It provides users with travel advice
+and information.
 
 ## Table of Content:
 
@@ -11,14 +13,16 @@ Travel Advisor OS is a web application built with Next.js, React, and TypeScript
 - [Credits](#credits)
 - [Authors](#Authors)
 
-
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing
+purposes.
 
 ## Live Url:
-Access travel advisor os at [travelOs.com](https://google.com)
+Access travel advisor os at [weather-app.com](https://google.com)
 
 ### Prerequisites
+
 - Node.js
 - Yarn
 
@@ -28,26 +32,20 @@ Access travel advisor os at [travelOs.com](https://google.com)
    ```sh
    git clone https://github.com/obinasBaba/weather-app-test.git
    ```
- 2. Install Packages
+2. Install Packages
    ```sh
    yarn install
 ```
 
 # Built With
+
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
 
-# Notes
-Type-casting : 
-   you may find some type-casting in the codebase specifically in Array Response from a graphql response. This is b/c the graphql response does not strictly follow the rule not to return Nullable Array elements(e.g. [null, null, null]). The casting is a workaround to filter out the null elements from the array.
-
-## Authors
-A list of the authors of Travel Advisor OS-web 
-- Henok Getachew ([@henzzo](https://github.com/obinasBaba))
+TODO: Describe and show how to build your code and run the tests.
 
 # weather-app-test
