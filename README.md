@@ -19,6 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 purposes.
 
 ## Live Url:
+
 Access travel advisor os at [weather-app.com](https://google.com)
 
 ### Prerequisites
@@ -35,6 +36,7 @@ Access travel advisor os at [weather-app.com](https://google.com)
 2. Install Packages
    ```sh
    yarn install
+
 ```
 
 # Built With
@@ -43,6 +45,7 @@ Access travel advisor os at [weather-app.com](https://google.com)
 - React
 - TypeScript
 - Tailwind CSS
+- TanStackQuery (react-query)
 
 # Build and Test
 
